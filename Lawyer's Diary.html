@@ -1,0 +1,282 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<title>Lawyer's Diary</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+
+
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>Lawyer's<br>Diary</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+    <a href="#welcome" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Welcome</a> 
+    <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Services</a> 
+    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">About</a> 
+    <a href="#icbook" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">IC Book</a> 
+    <a href="#followus" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Follow Us</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+    
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Open Menu</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="welcome">
+    <h1 class="w3-jumbo"><b>LAWYER'S DIARY</b></h1>
+    <h1 class="w3-xxxlarge w3-text-red"><b>Welcome!</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+  
+  <!-- Photo grid (modal) -->
+  <div class="w3-row-padding">
+    <div class="w3-half">
+      <img src="C:\Users\Admin\Downloads/download.jpg" style="width:200%";"height:200%" onclick="onClick(this)" alt="Concrete meets bricks">
+      
+    </div>
+  </div>
+  
+   
+  
+  <div class="w3-display-center w3-container w3-xlarge">
+    <p><b><h4> Create a Account </h4><b></p>
+	<p><button onclick="document.getElementById('Sign Up').style.display='block'" style="width:98.5%" class="w3-button w3-black">Sign Up</button></p>
+    
+	<p><b><h4> You have already a Account </h4><b></p>
+	<p><button onclick="document.getElementById('Login').style.display='block'"  style="width:98.5%" class="w3-button w3-black" >Login</button></p>
+   
+  </div>
+  
+  
+ <!-- Sign up -->
+   <div id="Sign Up" class="w3-modal">
+   <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-black">
+      <span onclick="document.getElementById('Sign Up').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+      
+      <div class="w3-center"><br>
+      
+        <img src="C:\Users\Admin\Downloads/3.png" alt="Avatar" style="width:40%" class="w3-circle w3-margin-top">
+      </div>
+
+      <form class="w3-container" action="/action_page.php">
+        <div class="w3-section">
+           
+           <label><b>E-mail ID</b></label>
+          <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Enter Your Email" name="email" required>
+          
+          <label><b>Username</b></label>
+          <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Enter Username" name="usrname" required>
+        
+          <label><b>Password</b></label>
+          <input class="w3-input w3-border" type="text" placeholder="Enter Password" name="psw" required>
+          
+           <label><b>Confirm Password</b></label>
+          <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Enter Password" name="psw" required>
+          
+           <label><b>Mobile No</b></label>
+          <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Enter Mobile No" name="mobile" required>
+          
+            <p>Please Select Type:</p>
+   <input type="radio" id="Lawyer" name="Type" value="Lawyer">
+   <label for="male">Lawyer</label><br>
+   <input type="radio" id="Client" name="Type" value="client">
+   <label for="female">Client</label><br>
+  
+          <button class="w3-button w3-block w3-green w3-section w3-padding" type="submit">Sign Up</button>
+          <input class="w3-check w3-margin-top" type="checkbox" checked="checked"> Remember me
+        </div>
+      </form>
+
+      <div class="w3-container w3-border-top w3-padding-16 w3-light-grey">
+        <button onclick="document.getElementById('id01').style.display='none'" type="button" class="w3-button w3-black">Cancel</button>
+        
+      </div>
+
+    </div>
+  </div>
+</div>
+
+	
+  </div>
+  
+  <!-- Login -->
+<div id="Login" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-black">
+      <span onclick="document.getElementById('Login').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+      <h1>Login</h1>
+    
+       <div class="w3-center"><br>
+      
+        <img src="C:\Users\Admin\Downloads/3.png" alt="Avatar" style="width:30%" class="w3-circle w3-margin-top">
+      </div>
+
+      <form class="w3-container" action="/action_page.php">
+        <div class="w3-section">
+           
+           <label><b>E-mail ID</b></label>
+          <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Enter Your Email" name="email" required>
+          <label><b>Password</b></label>
+          <input class="w3-input w3-border" type="text" placeholder="Enter Password" name="psw" required>
+          
+		  <button class="w3-button w3-block w3-green w3-section w3-padding" type="submit">Login</button>
+           
+        <button onclick="document.getElementById('id01').style.display='none'" type="button" class="w3-button w3-black">Cancel</button>
+        <span class="w3-right w3-padding w3-hide-small">Forgot <a href="#">password?</a></span>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+ 
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- Services -->
+  <div class="w3-container" id="services" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Services.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>We are a software developer And our focus is what's best for you and help you!</p>
+    <p>Some text about our services - what we do and what we offer. This website is very helpful to you. first you have to sign up in this website and create your protofolio. After that this website is remind for your next Hearing case, next hearing date, time and place. you are also checked your case status on this and create notes for imp point. its provide 24x7 security for your data and available anytime,anywhere.just do notes your day to day routine on this portal.
+    <p>This website also provide a indian constitution pocket book for your help.</p>
+    <p>This website are also use for client to update with their case.</p>
+  </div>
+  
+  <!-- About -->
+  <div class="w3-container" id="about" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>About.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+   
+    <p>"Lawyer's Diary " is designed to organize the all cases log in an efficient manner. Lawyer's Diary is a website for advocates to maintain their office. This application is very easy to operate and light on system tool to maintain information about all the case log. Lawyer's Diary is the Legal Cases Data Management application that maintains all the details of cases and also manages its previous date history.
+Lawyer's Diary is designed and developed for Lawyers to make their work easier. There are limitations to note down points on diaries. Hearing dates and related details of all cases can be easily stored and handled with this software. This way you may get rid of all the losses and headaches which may occur. Time is money in this profession. So lower your risks and go for ultimate solution for all your work.
+    <p>User (lawyer) Can create new case log by just filling the number of required fields with Date.This case will be store in database and after then user(lawyer)can manage this case on time.Improve your management of cases by rid of the manual case management. Now, You are free from all these outdated manual system and able to improve your productivity.
+If you have decided to take control of your case log you will need a powerful management software that will let you save record on cloud, manage your case log, and present the data to you in a way that will allow you manage record with respect to time.</p> 
+    <p>Lawyer's Diary provides you with all of the necessary functions and you can get it for free. With just a touch of your finger you can access the core functionalities of this Lawyer's Diary app such adding case log  </p>
+    <p><b>Our designers are thoughtfully chosen</b>:</p>
+  </div>
+
+  <!-- The Team -->
+  <div class="w3-row-padding w3-grayscale">
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="C:\Users\Admin\Downloads/4.jpg" alt="rmd" width="358" height="200">
+        <div class="w3-container">
+		 <h3>Reminder</h3>
+        </div>
+      </div>
+    </div>
+	 <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="C:\Users\Admin\Downloads/2.jpg" alt="notes" width="358" height="200">
+        <div class="w3-container">
+		 <h3>Notes</h3>
+        </div>
+      </div>
+    </div>
+	 <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="C:\Users\Admin\Downloads/1.jpg" alt="venue" width="358" height="200">
+        <div class="w3-container">
+		 <h3>venue</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- IC Book-->
+  <div class="w3-container" id="icbook" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Indian Constitution Book.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p><b><h3> Indian constituion Book</h3></b></p>
+	
+	
+	<br> </br>
+	<a href="file:///C:/Users/Admin/Downloads/COI-updated.pdf"> <img src="C:\Users\Admin\Downloads/constitution-of-india-book.jpg" style="width:80%" alt="ic book1"> </a>
+	
+   </div>
+ 
+  
+  <!-- follow  -->
+  <div class="w3-container" id="followus" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Follow us</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+   
+    <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Add font awesome icons -->
+    <a href="#" class="fa fa-facebook"></a>
+    <a href="#" class="fa fa-twitter"></a>
+    <a href="#" class="fa fa-google"></a>
+    <a href="#" class="fa fa-linkedin"></a>
+    <a href="#" class="fa fa-youtube"></a>
+    <a href="#" class="fa fa-instagram"></a>
+    <a href="#" class="fa fa-pinterest"></a>
+    <a href="#" class="fa fa-snapchat-ghost"></a>
+    <a href="#" class="fa fa-skype"></a>
+    </footer>
+
+        
+        
+<!-- End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">by <a href="https://www.abc,com" title="W3.CSS" target="_blank" class="w3-hover-opacity">abc.css</a></p></div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>

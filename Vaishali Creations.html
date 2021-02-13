@@ -1,0 +1,275 @@
+<!doctype = html>
+<html>
+
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Vaishai Creation</title>
+    </head>
+    
+    <style>
+        /*sidebar style*/
+        .sidebar {
+            color: rgb(83, 133, 130);
+            z-index:1;
+            font-weight:bold;
+            position: fixed;
+            float: left;
+            background-color: rgb(19, 17, 17);
+            line-height: 40px;
+            width: 250;
+            height: 100%;
+        }
+        #uc,#sh,#cs,#sr,#lc,#jn,#ct,#fr,#tr {
+            color:  rgb(247, 222, 4);
+        }
+        #content {
+            color: rgb(161, 158, 158);
+        }
+        #link {
+            color: rgb(247, 222, 4);
+        }
+        #link:hover {
+            color: rgb(19, 17, 17);
+            background-color:rgb(247, 222, 4);;
+        }
+        #heading{
+            color: transparent;
+            animation: effect 2s linear infinite; 
+        }
+
+        @keyframes effect { 
+            0% { 
+                background: linear-gradient( 
+                        #fafaf9, #4d4d43); 
+                -webkit-background-clip: text; 
+            }
+
+            25% { 
+                background: linear-gradient( 
+                    #dfc907fb, #4a4b05); 
+                -webkit-background-clip: text; 
+            }
+
+            50% { 
+                background: linear-gradient( 
+                    #94ec06, #2c4602); 
+                -webkit-background-clip: text; 
+            }
+
+            75% { 
+                background: linear-gradient( 
+                    #30e6b8, #0d382d); 
+                -webkit-background-clip: text; 
+            } 
+  
+            100% { 
+                background: linear-gradient( 
+                    #f789cd, #3a023f); 
+                -webkit-background-clip: text; 
+            } 
+        }
+        .sm {
+            border-color:  rgb(0, 0,0);
+            background-color:   rgb(247, 222, 4);
+            color: rgb(15, 14, 15);
+            padding: 11px;
+        }
+        .sm:hover {
+             color: rgb(247, 222, 4);
+             background-color:rgb(15,14,15);
+        
+        }
+        
+        
+    </style>
+    <body style="background-color: rgb(61, 61, 65);">
+
+        <script>
+        function moreimg(bid, mid, did){
+            var dots = document.getElementById(did);
+            var moreText = document.getElementById(mid);
+            var btnText = document.getElementById(bid);
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = " See more"; 
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "See less"; 
+                moreText.style.display = "inline";
+            }
+        }
+        </script>
+
+
+
+
+        <div class="sidebar">
+            <h1 style="color:  rgb(253, 253, 253); margin-top: 60px; margin-left: 60px;"><b>Vaishali<br>Creation</b></h1>
+            <b>  <ul style="margin-top: 100px; margin-left: 10px; list-style-type: none; font-size: larger;">
+                <li><a href="#uc" id="link">Upper-Collection</a></li>
+                <ul style="list-style-type: square; color: rgb(252, 248, 5);">
+                    <li><a href="#sh" id="link">Shirts</a></li>
+                    <li><a href="#fr" id="link">Formals</a></li>
+                    <li><a href="#sr" id="link">Shervanis</a></li>
+                    <li><a href="#cs" id="link">Coat-Suits</a></li>
+                </ul>
+                <li><a href="#lc" id="link">Lower-Collection</a></li>
+                <ul style="list-style-type: square; color: rgb(252, 248, 5);">
+                    <li><a href="#jn" id="link">jeans</a></li>
+                    <li><a href="#ct" id="link">Cottons</a></li>
+                    <li><a href="#tr" id="link";>Tracks</a></li>
+                </ul>
+                <li style="list-style-type: none;"><a href="#ct" id="link">Contact-Info</a></li>
+        </div>
+
+    
+        <div class="cont" style="margin-left: 305;">
+            <h1 id="heading" style="padding-top: 100px; padding-bottom: 10px; font-size: 48;">VAISHALI CREATION</h1>
+            <hr style="float: left; padding-left: 305px ;"><br>
+            <h3 id="content">Welcome, We hope you find here what you are looking for.</h3>
+           
+           
+            <h1 id="uc" >Upper-Collection</h1>
+            <h3 id="content">Upper-Collection which is Shirts, T-shirts, Formals, Coat-Suits, Shervanis etc... <br> We have mediam range(up to 300INR) and higher range(starting from 400INR) in Shirts and T-Shirts.</h3>
+            
+            <h2 id="sh" >Shirts</h2>
+            <p id="content">
+                <img style="padding: 50px;" src="https://drive.google.com/thumbnail?id=14s5yYoDsiC8NuRlV8GcmVA348ukqKmP1 "alt="p1" width="200" height="200">
+                <img style="padding: 50px;" src="https://drive.google.com/thumbnail?id=1D2LUhoTewzDhVyFqemXDePenC3c8bTUM" alt="p1" width="200" height="200">
+                <img style="padding: 50px;" src="https://drive.google.com/thumbnail?id=1oszh8IB-RU0O4suB8b8SysRUPyXRRxSp" alt="p1" width="200" height="200">
+                <span id="dots">...</span>
+                <span id="mores" style="display: none;">
+                <img style="padding: 50px;" src="https://drive.google.com/thumbnail?id=1RQgFkvKcJ0nMcfKEDg5ki3mEa7CBGjDI" alt="p1" width="200" height="200">
+                <img style="padding: 50px;" src="https://drive.google.com/thumbnail?id=1PXKg6_ZnuVv0LgD0ud4QhUq0USk5I197" alt="p1" width="200" height="200">
+                <img style="padding: 50px;" src="https://drive.google.com/thumbnail?id=109ReIkTWa322_8TDLNUZ7N8FOIeGUy1v" alt="p1" width="200" height="200">
+                <img style="padding: 50px;" src="https://drive.google.com/thumbnail?id=1mHY4JqBD7hOpiuewTo7QQO-mnhML3vo5" alt="p1" width="200" height="200">
+                <img style="padding: 50px;" src="https://drive.google.com/thumbnail?id=19_2RlVG8USJ4BmCzeQH4kSG72UVmwiab" alt="p1" width="200" height="200">
+                <img style="padding: 50px;" src="https://drive.google.com/thumbnail?id=1LBQtcrLfR_jwqFBdAACgjodzIckQu6Ym" alt="p1" width="200" height="200">
+                </span>
+                <button class="btn sm" id="btns" onclick="moreimg('btns','mores','dots')"><b>See more</b></button></b>  
+            </p>
+
+
+            <h2 id="fr" >Formals</h2>
+            <p id="content">
+                <img style="padding: 50px;" src="https://drive.google.com/thumbnail?id=1fv0oeaF5Mus828v8-wTsXH4wvLoEvyD3" alt="p1" width="200" height="200">
+                <img style="padding: 50px;" src="https://drive.google.com/thumbnail?id=1EfvMkcXUydQuNkaKnGFSBSYLfcn_WZF1" alt="p1" width="200" height="200">
+                <img style="padding: 50px;" src="https://drive.google.com/thumbnail?id=1mqOSLb9_PxmzSDpt2KqCRyir8Gaa9FHD" alt="p1" width="200" height="200">
+                <span id="dotf">...</span>
+                <span id="moref" style="display: none;">
+                    <img style="padding: 50px;" src="https://drive.google.com/thumbnail?id=1gnNX1kscUyBviUbf5AL31PI3ypSP03J_" alt="p1" width="200" height="200">
+                    <img style="padding: 50px;" src="https://drive.google.com/thumbnail?id=1lYmhulpo3rmCguzhXdF1cXEJfg5MqQRN" alt="p1" width="200" height="200">
+                    <img style="padding: 50px;" src="https://drive.google.com/thumbnail?id=1R2BhwloctgOxqMHp73R0DvpIZfXjosmy" alt="p1" width="200" height="200">
+                    <img style="padding: 50px;" src="https://drive.google.com/thumbnail?id=1MYqLCcm4-COMcbVkbKa0kP-NzLQSYtnd" alt="p1" width="200" height="200">
+                    <img style="padding: 50px;" src="https://drive.google.com/thumbnail?id=1XaWAgUS1CGlWjhIIBWSSlm5jBWohWcxd" alt="p1" width="200" height="200">
+                    <img style="padding: 50px;" src="https://drive.google.com/thumbnail?id=1u634eaxmRaM69fPSbsOwFbcR4WVYwx7j" alt="p1" width="200" height="200">
+                </span>
+                <button class="btn sm" id="btnf" onclick="moreimg('btnf','moref','dotf')"><b>See more</b></button></b>
+            </p>
+
+
+            <h2 id="sr" >Shervani</h2>
+            <p id="content">
+                <img style="padding: 50px;" src="https://drive.google.com/thumbnail?id=1HekKLQArFF7_ksGJFDkBHYoK8HBFCDxf" alt="p1" width="200" height="200">
+                <img style="padding: 50px;" src="https://drive.google.com/thumbnail?id=1JJOPYQ74cSI8dAw-floPVR8867REE18_" alt="p1" width="200" height="200">
+                <img style="padding: 50px;" src="https://drive.google.com/thumbnail?id=1uFN_QB-wHaCwYuvCts2VGTb2Tx6T-Ara" alt="p1" width="200" height="200">
+                <span id="dotsh">...</span>
+                <span id="moresh" style="display: none;">
+                    <img style="padding: 50px;" src="https://drive.google.com/thumbnail?id=1diKVst5fvqC8X-jf0pwl4JK_s_iFG3eQ" alt="p1" width="200" height="200">
+                    <img style="padding: 50px;" src="https://drive.google.com/thumbnail?id=12CnvXlgQ3sLSnCuPzGYWqXonaml5PD9R" alt="p1" width="200" height="200">
+                    <img style="padding: 50px;" src="https://drive.google.com/thumbnail?id=11V0KP8gkI0kurNR5f_ilQNNRKC2BQGbB" alt="p1" width="200" height="200">
+                    <img style="padding: 50px;" src="https://drive.google.com/thumbnail?id=1AmURadMzwqgRmm--Ie09DkzeM2T89jxq" alt="p1" width="200" height="200">
+                    <img style="padding: 50px;" src="https://drive.google.com/thumbnail?id=1-VCeBxipACD90bOq0tx4kh8RowsVS98G" alt="p1" width="200" height="200">
+                    <img style="padding: 50px;" src="https://drive.google.com/thumbnail?id=1yWaHBwDdkvBQDMLFzi-5l8qUi67y9u86" alt="p1" width="200" height="200">
+                </span>
+                <button class="btn sm" id="btnsh" onclick="moreimg('btnsh','moresh','dotsh')"><b>See more</b></button></b>
+            </p>
+
+
+            <h2 id="cs" >Coat-suits</h2>
+            <p id="content">
+                <img style="padding: 50px;" src="https://drive.google.com/thumbnail?id=1z1ZO3z3yO586bmdZ8pxqPWlTLgb-Asag" alt="p1" width="200" height="200">
+                <img style="padding: 50px;" src="https://drive.google.com/thumbnail?id=1fePMtLtpNNX2Bskqj-StGhrLmPrGY9Xk" alt="p1" width="200" height="200">
+                <img style="padding: 50px;" src="https://drive.google.com/thumbnail?id=1vGaEGe6HDfaQA5D9BBbKCyyel14KZ70X" alt="p1" width="200" height="200">
+                <span id="dotcs">...</span>
+                <span id="morecs" style="display: none;">
+                    <img style="padding: 50px;" src="https://drive.google.com/thumbnail?id=1F8Ww2Nv1-ZWw1KoFxK_z-F0l2UdOeMSy" alt="p1" width="200" height="200">
+                    <img style="padding: 50px;" src="https://drive.google.com/thumbnail?id=1hoOphVqk3txvWZ0g54devsn3QAOgz5yj" alt="p1" width="200" height="200">
+                    <img style="padding: 50px;" src="https://drive.google.com/thumbnail?id=147N_x0PwZke123syTgkIIWISK-fOntYi" alt="p1" width="200" height="200">
+                    <img style="padding: 50px;" src="https://drive.google.com/thumbnail?id=1M_MlqnuUWQeBh9-l0v_VrSC5lF2pjeZ_" alt="p1" width="200" height="200">
+                    <img style="padding: 50px;" src="https://drive.google.com/thumbnail?id=1Ohq4-YogoLZ5RGIdh2WlQOx6FsDhsN5-" alt="p1" width="200" height="200">
+                    <img style="padding: 50px;" src="https://drive.google.com/thumbnail?id=1t3mDsuAWq8CraQd-qvDZlJDAMJt4aDyR" alt="p1" width="200" height="200">
+                </span>
+                <button class="btn sm" id="btncs" onclick="moreimg('btncs','morecs','dotcs')"><b>See more</b></button></b>
+            </p>
+            
+
+           
+           
+            <h1 id="lc" >Lower-collection</h1>
+            <h3 id="content">Lower-Collection which is Jeans, Cottons, Tracks etc... <br> We have mediam range(up to 500INR) and higher range(starting from 700-800INR) in Jeans and Cottons.</h3>
+            
+            <h2 id="jn" >jeans</h2>
+            <p id="content">
+                <img style="padding: 50px;" src="https://drive.google.com/thumbnail?id=1if0dP83m6BEZfLB7reGKh5veUl_Z9pb6" alt="p1" width="200" height="200">
+                <img style="padding: 50px;" src="https://drive.google.com/thumbnail?id=1APaTZsB5qiZQYuLIltQffvbG0LHtILNF" alt="p1" width="200" height="200">
+                <img style="padding: 50px;" src="https://drive.google.com/thumbnail?id=1uvE3xGrko1D89QeSdNhqcuteMaVXcXK2" alt="p1" width="200" height="200">
+                <span id="dotj">...</span>
+                <span id="morej" style="display: none;">
+                    <img style="padding: 50px;" src="https://drive.google.com/thumbnail?id=1l2sc4t551wnEQF4fdP1QY7kEr4Gotm5Q" alt="p1" width="200" height="200">
+                    <img style="padding: 50px;" src="https://drive.google.com/thumbnail?id=1JS4Q1D9_985OsyCMjOiagypgUc9cGwbI" alt="p1" width="200" height="200">
+                    <img style="padding: 50px;" src="https://drive.google.com/thumbnail?id=1u_y8N9vTsBrfPMAClvAyDILntJ_XVr1Y" alt="p1" width="200" height="200">
+                    <!img style="padding: 50px;" src="https://drive.google.com/thumbnail?id=jeans_l1.jpg" alt="p1" width="200" height="200">
+                    <!img style="padding: 50px;" src="https://drive.google.com/thumbnail?id=jeans_l2.jpg" alt="p1" width="200" height="200">
+                    <!img style="padding: 50px;" src="https://drive.google.com/thumbnail?id=jeans_l3.jpg" alt="p1" width="200" height="200">
+                </span>
+                <button class="btn sm" id="btnj" onclick="moreimg('btnj','morej','dotj')"><b>See more</b></button></b>
+            </p>
+           
+            <h2 id="ct" >cottons</h2>
+            <p id="content">
+                <img style="padding: 50px;" src="https://drive.google.com/thumbnail?id=1ESq3dtLAhg0udtG-qjTTi_P-wMVfcLwy" alt="p1" width="200" height="200">
+                <img style="padding: 50px;" src="https://drive.google.com/thumbnail?id=1YEjButbSpQl1q_f5jEYYSCBI4QEFqpTv" alt="p1" width="200" height="200">
+                <img style="padding: 50px;" src="https://drive.google.com/thumbnail?id=1_y9E6iPpHE6klWD9al3Ssl6JPif1Nzoo" alt="p1" width="200" height="200">
+                <span id="dotc">...</span>
+                <span id="morec" style="display: none;">
+                    <img style="padding: 50px;" src="https://drive.google.com/thumbnail?id=1yd3Fs4eUB6oTUUO8gddKdqHIodWRwf6V" alt="p1" width="200" height="200">
+                    <img style="padding: 50px;" src="https://drive.google.com/thumbnail?id=1CaqkI1BjoA53IyrTfbVWuTYItdMd2c5w" alt="p1" width="200" height="200">
+                    <img style="padding: 50px;" src="https://drive.google.com/thumbnail?id=1aQaQvfp6Bquq_FkhrYggryRE__nbnKA4" alt="p1" width="200" height="200">
+                    <!img style="padding: 50px;" src="https://drive.google.com/thumbnail?id=cottons_l1.jpg" alt="p1" width="200" height="200">
+                    <!img style="padding: 50px;" src="https://drive.google.com/thumbnail?id=cottons_l2.jpg" alt="p1" width="200" height="200">
+                    <!img style="padding: 50px;" src="https://drive.google.com/thumbnail?id=cottons_l3.jpg" alt="p1" width="200" height="200">
+                </span>
+                <button class="btn sm" id="btnc" onclick="moreimg('btnc','morec','dotc')"><b>See more</b></button></b>
+            </p>
+           
+           
+           
+            <h2 id="tr" >Tracks</h2>
+            <p id="content">
+                <img style="padding: 50px;" src="https://drive.google.com/thumbnail?id=1ZG68uFDLA5CM2OSheVd56UYGSzhb7knF" alt="p1" width="200" height="200">
+                <img style="padding: 50px;" src="https://drive.google.com/thumbnail?id=1fv4CSFJUQTkeeS0o7vcnuxl0VRsRuBRH" alt="p1" width="200" height="200">
+                <img style="padding: 50px;" src="https://drive.google.com/thumbnail?id=1j5tZyUwaVf524KHpGUz8hTl_3zE_YXjF" alt="p1" width="200" height="200">
+                <span id="dott">...</span>
+                <span id="moret" style="display: none;">
+                    <!img style="padding: 50px;" src="https://drive.google.com/thumbnail?id=tracks_m1.jpg" alt="p1" width="200" height="200">
+                    <!img style="padding: 50px;" src="https://drive.google.com/thumbnail?id=tracks_m2.jpg" alt="p1" width="200" height="200">
+                    <!img style="padding: 50px;" src="https://drive.google.com/thumbnail?id=tracks_m3.jpg" alt="p1" width="200" height="200">
+                    <!img style="padding: 50px;" src="https://drive.google.com/thumbnail?id=tracks_l1.jpg" alt="p1" width="200" height="200">
+                    <!img style="padding: 50px;" src="https://drive.google.com/thumbnail?id=tracks_l2.jpg" alt="p1" width="200" height="200">
+                    <!img style="padding: 50px;" src="https://drive.google.com/thumbnail?id=tracks_l3.jpg" alt="p1" width="200" height="200">
+                    
+                </span>
+                <button class="btn sm" id="btnt" onclick="moreimg('btnt','moret','dott')"><b>See more</b></button></b>
+            </p>
+           
+            <h1 id="ct" >Contact-Info</h1>
+            <h2 id="content">Vaishali Creation</h2>
+            <h3 id="content">Turning Point <br> Opp. Dadasaheb Jain Tample <br> Kalanala, Bhavnagar-364001 <br> Gujrat </h3>
+            <h3 id="content">+91 9427441230 <br> +91 9016117484 </h3>
+        </div>
+        
+    </body>
+</html>
